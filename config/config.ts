@@ -108,7 +108,7 @@ export default defineConfig({
     },
   },
   manifest: {
-    basePath: '/',
+    basePath: '/resume/',
   },
   proxy: proxy[REACT_APP_ENV || 'dev'],
   chainWebpack: webpackPlugin,
