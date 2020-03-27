@@ -1,0 +1,51 @@
+@import '~antd/es/style/themes/default.less';
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  @media screen and (max-width: @screen-sm) {
+    width: 95%;
+  }
+
+  .welcomeTitle {
+    width: 740px;
+    color: @primary-color;
+    font-weight: 900;
+  }
+  .welcomeContent {
+    width: 600px;
+  }
+  .welcomeDemo {
+    width: 1370px;
+  }
+  .resumeDemo {
+    width: 410px;
+    margin: 10px;
+    border-radius: 8px;
+  }
+  .template {
+    display: flex !important;
+    justify-content: center;
+  }
+  .useButton {
+    position: absolute;
+    display: none;
+    margin-top: 50px;
+  }
+
+  .slider {
+    display: flex;
+    align-items: center;
+  }
+  .btnLeft {
+    z-index: 99;
+    margin-right: -40px;
+  }
+  .btnRight {
+    z-index: 99;
+    margin-left: -40px;
+  }
+}
