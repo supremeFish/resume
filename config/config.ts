@@ -107,6 +107,10 @@ export default defineConfig({
       },
     },
   },
+  base: '/resume/',
+  publicPath: '/resume/',
+  runtimePublicPath: true,
+  exportStatic: {},
   manifest: {
     basePath: '/resume/',
   },
