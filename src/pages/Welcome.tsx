@@ -12,7 +12,7 @@ const Welcome: React.FC<{}> = () => {
     for (let i = 1; i <= count; i += 1) {
       tempList.push(<div onMouseEnter={() => setButtonDisplay(i)} onMouseLeave={() => {setButtonDisplay(0)}} className={styles.template} key={i}>
         <Button className={styles.useButton} style={{display: buttonDisplay === i ? 'block' : 'none'}} type="primary" size="large">Use This Template</Button>
-        <img alt="" className={styles.resumeDemo} src={require(`../assets/resume-demo${(i % 2) + 1}.jpg`)} />
+        <img alt="" className={styles.resumeDemo} src={require(`../assets/resume-demo${i}.jpg`)} />
       </div>)
     }
     return tempList;
